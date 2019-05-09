@@ -17,7 +17,6 @@ public class MapService {
 		    Location coordinates = response.getResults().get(0).getGeometry().getLocation();
 		    location.setLat(coordinates.getLat());
 		    location.setLng(coordinates.getLng());
-		    location.setCity(coordinates.getCity());
-		    location.setState(coordinates.getState());
+		    
 	}
 }
