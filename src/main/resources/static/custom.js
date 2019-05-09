@@ -11,6 +11,7 @@ var map
         var marker = new google.maps.Marker({
             position: coords,
             map: map,
+            title: "You are here",
             icon: image,
             animation: google.maps.Animation.BOUNCE
         });
@@ -23,7 +24,7 @@ var map
         });
 
         google.maps.event.addListener(marker, 'click', function() {
-           infowindow.open(map,marker);
+           infowindow.open(map,marker)
         });
       }
 
